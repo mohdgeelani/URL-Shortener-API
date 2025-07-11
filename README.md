@@ -92,4 +92,10 @@ http://localhost:5000/abc123
    node index.js
 
    ```
-5. Test via Postman 
+5. Test via Postman (import the provided .json collection)
+
+---
+## Additional Notes
+- The API runs on: http://localhost:5000
+- All short URLs are persisted in PostgreSQL
+- You can view table data using any PostgreSQL GUI (e.g., pgAdmin)
