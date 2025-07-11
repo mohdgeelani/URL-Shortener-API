@@ -31,9 +31,24 @@ A simple, production-grade REST API built with **Node.js**, **Express**, and **P
 ### POST `/shorten`
 Shortens a long URL.
 
-- **Request Body (JSON):**
+- **Request Body (JSON)**
 ```json
 {
   "url": "https://example.com/very/long/link"
 }
 ```
+- **Response (JSON)**
+```json
+{
+  "shortUrl": "http://localhost:5000/abc123"
+}
+```
+---
+
+### GET /:code
+- **Redirects to the original URL**.
+
+http://localhost:5000/abc123
+→ Redirects to → https://example.com/very/long/link
+
+
