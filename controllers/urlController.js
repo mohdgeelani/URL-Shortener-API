@@ -5,6 +5,8 @@ const URL = require('../models/url');
 
 const BASE_URL = process.env.BASE_URL;
 // console.log(req.body);
+
+// Shorten the original URL
 const shortenUrl = async (req, res) => {
        const {url} = req.body;
 console.log(req.body);
@@ -20,7 +22,7 @@ console.log(req.body);
        {
         return res.json({shortUrl:`${BASE_URL}/${existingurl.shortCode}`});
        }
-
+        // Generate a unique short code using nanoid
        const shortCode = nanoid(6);
 
        const newrecord = await URL.create({
@@ -36,14 +38,16 @@ console.log(req.body);
 }
 };
 
-
+// Redirect to the original URL using the short code
 const redirectUrl = async (req, res) => {
   const { shortCode } = req.params;
 
   try {
+    // Find the original URL using the short code
     const record = await URL.findOne({ where: { shortCode } });
 
     if (record) {
+    // Redirect to the original URL
       return res.redirect(record.originalurl);
     } else {
       return res.status(404).json({ error: 'Short URL not found' });
