@@ -92,7 +92,28 @@ http://localhost:5000/abc123
    node index.js
 
    ```
-5. Test via Postman (import the provided .json collection)
+## 🧪 Postman Collection
+   The project includes a Postman collection for testing the API:
+   Collection File: [`URL Shortener API.postman_collection.json`](./URL%20Shortener%20API.postman_collection.json)
+   **Example Request:**
+   ```json
+   POST http://localhost:5000/shorten
+    Body:
+    {
+      "url": "https://www.google.com"
+    }
+
+   ```
+   **Response:**
+   ```json
+   {
+    "shortUrl": "http://localhost:5000/5GkmKA"
+   }
+   ```json
+   **Then test redirection with:**
+   http://localhost:5000/5GkmKA
+   ```
+   This redirects to: https://www.google.com
 
 ---
 ## Additional Notes
