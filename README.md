@@ -47,8 +47,10 @@ Shortens a long URL.
 
 ### GET /:code
 - **Redirects to the original URL**.
-
+```
 http://localhost:5000/abc123
 → Redirects to → https://example.com/very/long/link
+```
+---
 
 
