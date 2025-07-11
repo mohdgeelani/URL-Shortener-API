@@ -53,4 +53,43 @@ http://localhost:5000/abc123
 ```
 ---
 
+## 📊 Database Schema
 
+| Field        | Type   | Description                   |
+|--------------|--------|-------------------------------|
+| `originalurl`| TEXT   | The original long URL         |
+| `shortCode`  | STRING | Unique short identifier       |
+| `createdAt`  | DATE   | Auto-generated timestamp      |
+| `updatedAt`  | DATE   | Auto-generated timestamp      |
+
+---
+
+## How to Run Locally
+
+1. Clone the repo
+   ```
+   git clone https://github.com/mohdgeelani/URL-Shortener-API.git
+   cd url_shortener_api
+
+   ```
+2. Install dependencies
+   ```
+   npm install
+   ```
+3. Create a .env file in project root folder
+   ```
+   PORT=5000
+    DB_NAME=urlshortener
+    DB_USER=postgres
+    DB_PASSWORD=yourpassword
+    DB_HOST=localhost
+    DB_PORT=5432
+    BASE_URL=http://localhost:5000
+
+   ```
+4. Run the app
+   ```
+   node index.js
+
+   ```
+5. Test via Postman 
