@@ -95,6 +95,7 @@ http://localhost:5000/abc123
 ## 🧪 Postman Collection
    The project includes a Postman collection for testing the API:
    Collection File: [`URL Shortener API.postman_collection.json`](./URL%20Shortener%20API.postman_collection.json)
+   
    **Example Request:**
    ```json
    POST http://localhost:5000/shorten
@@ -102,7 +103,7 @@ http://localhost:5000/abc123
     {
       "url": "https://www.google.com"
     }
-
+   ```
    **Response:**
    
    {
