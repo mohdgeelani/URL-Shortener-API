@@ -103,16 +103,15 @@ http://localhost:5000/abc123
       "url": "https://www.google.com"
     }
 
-   ```
    **Response:**
-   ```json
+   
    {
     "shortUrl": "http://localhost:5000/5GkmKA"
    }
-   ```json
+   ```
    **Then test redirection with:**
    http://localhost:5000/5GkmKA
-   ```
+   
    This redirects to: https://www.google.com
 
 ---
