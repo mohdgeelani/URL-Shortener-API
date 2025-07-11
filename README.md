@@ -104,12 +104,14 @@ http://localhost:5000/abc123
       "url": "https://www.google.com"
     }
    ```
+   ```json
    **Response:**
    
    {
     "shortUrl": "http://localhost:5000/5GkmKA"
    }
    ```
+
    **Then test redirection with:**
    http://localhost:5000/5GkmKA
    
