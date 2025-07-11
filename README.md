@@ -98,15 +98,14 @@ http://localhost:5000/abc123
    
    **Example Request:**
    ```json
-   POST http://localhost:5000/shorten
+    POST http://localhost:5000/shorten
     Body:
     {
       "url": "https://www.google.com"
     }
    ```
-   ```json
    **Response:**
-   
+   ```json
    {
     "shortUrl": "http://localhost:5000/5GkmKA"
    }
