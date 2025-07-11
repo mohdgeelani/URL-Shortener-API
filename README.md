@@ -78,14 +78,14 @@ http://localhost:5000/abc123
    ```
 3. Create a .env file in project root folder
    ```
-   PORT=5000
+    PORT=5000
     DB_NAME=urlshortener
     DB_USER=postgres
     DB_PASSWORD=yourpassword
     DB_HOST=localhost
     DB_PORT=5432
     BASE_URL=http://localhost:5000
-
+    # Use your own password
    ```
 4. Run the app
    ```
@@ -114,7 +114,8 @@ http://localhost:5000/abc123
    ```
 
    **Then test redirection with:**
-   http://localhost:5000/5GkmKA
+   [http://localhost:5000/5GkmKA](http://localhost:5000/5GkmKA)
+   
    This redirects to: https://www.google.com
    (Only works when the local server is running)
 
